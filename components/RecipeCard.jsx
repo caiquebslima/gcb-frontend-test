@@ -6,7 +6,7 @@ export default function RecipeCard({ name, image }) {
           <img src={image} alt='' />
         </div>
         <div className='card__info'>
-          <span className='card__info--title'>{name}</span>
+          <h3 className='card__info--title'>{name}</h3>
           <button>See Recipe</button>
         </div>
       </div>

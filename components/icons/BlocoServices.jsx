@@ -47,7 +47,7 @@ export default function BlocoServices() {
           y2='0.5'
           href='#linear-gradient-4'
         />
-        <clipPath id='clip-path'>
+        <clipPath id='clipPath'>
           <path
             id='Caminho_10'
             data-name='Caminho 10'
@@ -551,7 +551,7 @@ export default function BlocoServices() {
               fill='url(#linear-gradient-5)'
             />
             <g id='Grupo_3' data-name='Grupo 3' transform='translate(0 28.375)'>
-              <g id='Grupo_2' data-name='Grupo 2' clip-path='url(#clip-path)'>
+              <g id='Grupo_2' data-name='Grupo 2' clipPath='url(#clipPath)'>
                 <g
                   id='Grupo_1'
                   data-name='Grupo 1'
@@ -564,8 +564,8 @@ export default function BlocoServices() {
                     transform='translate(-719.333 -614.33)'
                     fill='none'
                     stroke='#fff'
-                    stroke-miterlimit='10'
-                    stroke-width='1'
+                    strokeMiterlimit='10'
+                    strokeWidth='1'
                     opacity='0.2'
                   />
                   <path
@@ -575,8 +575,8 @@ export default function BlocoServices() {
                     transform='translate(-720.773 -615.227)'
                     fill='none'
                     stroke='#fff'
-                    stroke-miterlimit='10'
-                    stroke-width='1'
+                    strokeMiterlimit='10'
+                    strokeWidth='1'
                     opacity='0.2'
                   />
                   <path
@@ -586,8 +586,8 @@ export default function BlocoServices() {
                     transform='translate(-722.338 -616.124)'
                     fill='none'
                     stroke='#fff'
-                    stroke-miterlimit='10'
-                    stroke-width='1'
+                    strokeMiterlimit='10'
+                    strokeWidth='1'
                     opacity='0.2'
                   />
                   <path
@@ -597,8 +597,8 @@ export default function BlocoServices() {
                     transform='translate(-727.048 -617.021)'
                     fill='none'
                     stroke='#fff'
-                    stroke-miterlimit='10'
-                    stroke-width='1'
+                    strokeMiterlimit='10'
+                    strokeWidth='1'
                     opacity='0.2'
                   />
                 </g>

@@ -5,14 +5,15 @@ import Illustration from '../components/icons/Illustration';
 import IconSearch from '../components/icons/IconSearch';
 import Menu from '../components/Menu';
 import RecipeCard from '../components/RecipeCard';
+import BlocoServices from '../components/icons/BlocoServices';
 
 export default function Home() {
   return (
     <div>
       <Head>
         <title>Healthy Food</title>
-        <meta charset='utf-8' />
-        <meta http-equiv='x-ua-compatible' content='ie=edge' />
+        <meta charSet='utf-8' />
+        <meta httpEquiv='x-ua-compatible' content='ie=edge' />
         <meta
           name='viewport'
           content='width=device-width, height=device-height, viewport-fit=cover, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no'
@@ -68,7 +69,37 @@ export default function Home() {
         </div>
       </section>
       <section className='know-more'>
-        <div className='svg-container'></div>
+        <div className='svg-container'>
+          <BlocoServices />
+        </div>
+        <div className='know-more__text'>
+          <h2>The best services ready to serve you</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid,
+            commodi. Aut, placeat omnis deserunt sed delectus nobis. Aliquid,
+            necessitatibus. Placeat.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
+            voluptates!
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto,
+            nisi.
+          </p>
+
+          <button>Know More</button>
+        </div>
+      </section>
+      <section className='blog'>
+        <div className='blog__title'>
+          <h2>Read Our Blog</h2>
+          <p>
+            Far far away, behind the word mountains, far from the countries
+            Vakalia and Cosonantia, there live the blind texts
+          </p>
+        </div>
+        <div className='blog__carousel'></div>
       </section>
     </div>
   );

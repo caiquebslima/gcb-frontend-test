@@ -1,18 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="679" height="672" viewBox="0 0 679 672">
   <defs>
     <linearGradient id="linear-gradient" x1="0.109" y1="1.137" x2="0.777" y2="0.048" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#6bbc61"/>
-      <stop offset="1" stop-color="#a7df63"/>
+      <stop offset="0" stopColor="#6bbc61"/>
+      <stop offset="1" stopColor="#a7df63"/>
     </linearGradient>
     <linearGradient id="linear-gradient-2" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#48c5e5"/>
-      <stop offset="1" stop-color="#fff9c9"/>
+      <stop offset="0" stopColor="#48c5e5"/>
+      <stop offset="1" stopColor="#fff9c9"/>
     </linearGradient>
     <linearGradient id="linear-gradient-3" x1="0" y1="0.5" x2="1" y2="0.5" xlink:href="#linear-gradient"/>
     <linearGradient id="linear-gradient-4" x1="0.204" y1="0.897" x2="1.095" y2="-0.298" xlink:href="#linear-gradient-2"/>
     <linearGradient id="linear-gradient-5" x1="0.5" y1="-1.712" x2="0.5" y2="1.126" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#369e5f"/>
-      <stop offset="1" stop-color="#369e5f" stop-opacity="0"/>
+      <stop offset="0" stopColor="#369e5f"/>
+      <stop offset="1" stopColor="#369e5f" stopOpacity="0"/>
     </linearGradient>
     <linearGradient id="linear-gradient-8" x1="-0.294" y1="0.817" x2="1.131" y2="0.223" xlink:href="#linear-gradient"/>
     <linearGradient id="linear-gradient-9" x1="0.353" y1="1.215" x2="0.598" y2="0.047" xlink:href="#linear-gradient"/>
@@ -21,43 +21,43 @@
     <linearGradient id="linear-gradient-14" x1="0.5" y1="1.424" x2="0.5" y2="0.439" xlink:href="#linear-gradient"/>
     <linearGradient id="linear-gradient-16" x1="0.5" y1="1.06" x2="0.5" y2="0.124" xlink:href="#linear-gradient"/>
     <linearGradient id="linear-gradient-17" x1="0.5" y1="-0.298" x2="0.5" y2="1.45" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#fff"/>
-      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0" stopColor="#fff"/>
+      <stop offset="1" stopColor="#fff" stopOpacity="0"/>
     </linearGradient>
     <linearGradient id="linear-gradient-18" x1="0.5" y1="-0.791" x2="0.5" y2="1.283" xlink:href="#linear-gradient-17"/>
     <linearGradient id="linear-gradient-21" x1="-18.799" y1="-0.298" x2="-18.799" y2="1.45" xlink:href="#linear-gradient-17"/>
     <linearGradient id="linear-gradient-22" x1="0.404" y1="0.381" x2="0.654" y2="1.045" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#fed300"/>
-      <stop offset="1" stop-color="#eaad03"/>
+      <stop offset="0" stopColor="#fed300"/>
+      <stop offset="1" stopColor="#eaad03"/>
     </linearGradient>
     <linearGradient id="linear-gradient-23" x1="1.325" y1="0.543" x2="0.383" y2="0.497" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#8f5138"/>
-      <stop offset="1" stop-color="#ba6d4d"/>
+      <stop offset="0" stopColor="#8f5138"/>
+      <stop offset="1" stopColor="#ba6d4d"/>
     </linearGradient>
     <linearGradient id="linear-gradient-24" x1="1" y1="0.5" x2="0" y2="0.5" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#1d164d"/>
-      <stop offset="1" stop-color="#4a4975"/>
+      <stop offset="0" stopColor="#1d164d"/>
+      <stop offset="1" stopColor="#4a4975"/>
     </linearGradient>
     <linearGradient id="linear-gradient-25" x1="1.259" y1="1.165" x2="0.534" y2="0.403" xlink:href="#linear-gradient-23"/>
     <linearGradient id="linear-gradient-26" x1="-1.488" y1="0.5" x2="-0.488" y2="0.5" xlink:href="#linear-gradient-24"/>
     <linearGradient id="linear-gradient-27" x1="0.5" y1="-0.866" x2="0.5" y2="0.557" xlink:href="#linear-gradient-23"/>
     <linearGradient id="linear-gradient-28" x1="0.5" y1="0.948" x2="0.5" y2="-0.129" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#ffc0ac"/>
-      <stop offset="1" stop-color="#ffd6c7"/>
+      <stop offset="0" stopColor="#ffc0ac"/>
+      <stop offset="1" stopColor="#ffd6c7"/>
     </linearGradient>
     <linearGradient id="linear-gradient-29" x1="0.5" y1="1.118" x2="0.5" y2="0.041" xlink:href="#linear-gradient-28"/>
     <linearGradient id="linear-gradient-30" x1="1.142" y1="0.892" x2="-0.016" y2="0.185" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#c9e2f4"/>
-      <stop offset="1" stop-color="#eaf5ff"/>
+      <stop offset="0" stopColor="#c9e2f4"/>
+      <stop offset="1" stopColor="#eaf5ff"/>
     </linearGradient>
     <linearGradient id="linear-gradient-31" x1="0.844" y1="0.5" x2="0.049" y2="0.5" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#c7283a"/>
-      <stop offset="1" stop-color="#ef4b4b"/>
+      <stop offset="0" stopColor="#c7283a"/>
+      <stop offset="1" stopColor="#ef4b4b"/>
     </linearGradient>
     <linearGradient id="linear-gradient-32" x1="0.888" y1="1.503" x2="0.405" y2="0.363" xlink:href="#linear-gradient-31"/>
     <linearGradient id="linear-gradient-33" x1="0.974" y1="-0.084" x2="0.162" y2="0.916" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#dbe42c"/>
-      <stop offset="1" stop-color="#6ad419"/>
+      <stop offset="0" stopColor="#dbe42c"/>
+      <stop offset="1" stopColor="#6ad419"/>
     </linearGradient>
     <linearGradient id="linear-gradient-34" x1="0.798" y1="1.352" x2="0.269" y2="-0.163" xlink:href="#linear-gradient-28"/>
     <linearGradient id="linear-gradient-35" x1="0" y1="0.5" x2="1" y2="0.5" xlink:href="#linear-gradient-24"/>
@@ -67,8 +67,8 @@
     <linearGradient id="linear-gradient-41" x1="0.948" y1="1.537" x2="0.236" y2="0.129" xlink:href="#linear-gradient-31"/>
     <linearGradient id="linear-gradient-42" x1="0.746" y1="0.128" x2="0.158" y2="1.039" xlink:href="#linear-gradient-28"/>
     <linearGradient id="linear-gradient-43" x1="-0.312" y1="0.848" x2="0.865" y2="0.326" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#c7283a"/>
-      <stop offset="1" stop-color="#c7283a" stop-opacity="0"/>
+      <stop offset="0" stopColor="#c7283a"/>
+      <stop offset="1" stopColor="#c7283a" stopOpacity="0"/>
     </linearGradient>
     <linearGradient id="linear-gradient-44" x1="0.34" y1="1.169" x2="0.523" y2="0.406" xlink:href="#linear-gradient-43"/>
     <linearGradient id="linear-gradient-45" x1="0.176" y1="0.998" x2="0.838" y2="-0.02" xlink:href="#linear-gradient-43"/>
@@ -78,8 +78,8 @@
     <linearGradient id="linear-gradient-49" x1="0.792" y1="1.348" x2="0.269" y2="-0.171" xlink:href="#linear-gradient-28"/>
     <linearGradient id="linear-gradient-51" x1="0.652" y1="0.499" x2="0.004" y2="0.192" xlink:href="#linear-gradient-28"/>
     <linearGradient id="linear-gradient-52" x1="0.647" y1="0.2" x2="0.249" y2="1.014" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#fff"/>
-      <stop offset="1" stop-color="#eaf5ff"/>
+      <stop offset="0" stopColor="#fff"/>
+      <stop offset="1" stopColor="#eaf5ff"/>
     </linearGradient>
     <linearGradient id="linear-gradient-53" x1="0.119" y1="1.244" x2="0.525" y2="0.227" xlink:href="#linear-gradient-31"/>
   </defs>

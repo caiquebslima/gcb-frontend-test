@@ -8,7 +8,7 @@ export default function BlocoImage4() {
       viewBox='0 0 348 247'
     >
       <defs>
-        <clipPath id='clip-path'>
+        <clipPath id='clipPath'>
           <path
             id='Retângulo_21'
             data-name='Retângulo 21'
@@ -35,7 +35,7 @@ export default function BlocoImage4() {
         <g
           id='Grupo_de_máscara_1'
           data-name='Grupo de máscara 1'
-          clip-path='url(#clip-path)'
+          clipPath='url(#clipPath)'
         >
           <rect
             id='Imagem_23'

@@ -8,7 +8,7 @@ export default function Comida4() {
       viewBox='0 0 253 225'
     >
       <defs>
-        <clipPath id='clip-path'>
+        <clipPath id='clipPath'>
           <path
             id='Retângulo_21'
             data-name='Retângulo 21'
@@ -35,7 +35,7 @@ export default function Comida4() {
           id='Grupo_de_máscara_1'
           data-name='Grupo de máscara 1'
           transform='translate(137 1652)'
-          clip-path='url(#clip-path)'
+          clipPath='url(#clipPath)'
         >
           <rect
             id='Imagem_15'

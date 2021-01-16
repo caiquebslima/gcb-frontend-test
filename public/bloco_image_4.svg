@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="348" height="247" viewBox="0 0 348 247">
   <defs>
-    <clipPath id="clip-path">
+    <clipPath id="clipPath">
       <path id="Retângulo_21" data-name="Retângulo 21" d="M7,0H341a7,7,0,0,1,7,7V247a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V7A7,7,0,0,1,7,0Z" transform="translate(137 1652)" fill="#707070"/>
     </clipPath>
     <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 1350 900">
@@ -8,7 +8,7 @@
     </pattern>
   </defs>
   <g id="Image" transform="translate(-137 -1652)">
-    <g id="Grupo_de_máscara_1" data-name="Grupo de máscara 1" clip-path="url(#clip-path)">
+    <g id="Grupo_de_máscara_1" data-name="Grupo de máscara 1" clipPath="url(#clipPath)">
       <rect id="Imagem_23" data-name="Imagem 23" width="433" height="289" transform="translate(115 1631)" fill="url(#pattern)"/>
     </g>
   </g>
