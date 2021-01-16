@@ -1,0 +1,15 @@
+header {
+  display: flex;
+  h1 {
+    color: #fff;
+    font-weight: 600;
+    @include media-breakpoint-up(md) {
+      color: #84ca62;
+      font-weight: 700;
+    }
+  }
+  ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}

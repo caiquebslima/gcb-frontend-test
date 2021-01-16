@@ -17,8 +17,8 @@ export default function BlocoServices() {
           y2='0.5'
           gradientUnits='objectBoundingBox'
         >
-          <stop offset='0' stop-color='#6bbc61' />
-          <stop offset='1' stop-color='#a7df63' />
+          <stop offset='0' stopColor='#6bbc61' />
+          <stop offset='1' stopColor='#a7df63' />
         </linearGradient>
         <linearGradient
           id='linear-gradient-3'
@@ -36,8 +36,8 @@ export default function BlocoServices() {
           y2='1.557'
           gradientUnits='objectBoundingBox'
         >
-          <stop offset='0' stop-color='#8f5138' />
-          <stop offset='1' stop-color='#ba6d4d' />
+          <stop offset='0' stopColor='#8f5138' />
+          <stop offset='1' stopColor='#ba6d4d' />
         </linearGradient>
         <linearGradient
           id='linear-gradient-5'
@@ -64,8 +64,8 @@ export default function BlocoServices() {
           y2='0.142'
           gradientUnits='objectBoundingBox'
         >
-          <stop offset='0' stop-color='#1d164d' />
-          <stop offset='1' stop-color='#4a4975' />
+          <stop offset='0' stopColor='#1d164d' />
+          <stop offset='1' stopColor='#4a4975' />
         </linearGradient>
         <linearGradient
           id='linear-gradient-7'
@@ -75,8 +75,8 @@ export default function BlocoServices() {
           y2='0.169'
           gradientUnits='objectBoundingBox'
         >
-          <stop offset='0' stop-color='#c9e2f4' />
-          <stop offset='1' stop-color='#eaf5ff' />
+          <stop offset='0' stopColor='#c9e2f4' />
+          <stop offset='1' stopColor='#eaf5ff' />
         </linearGradient>
         <linearGradient
           id='linear-gradient-8'
@@ -86,8 +86,8 @@ export default function BlocoServices() {
           y2='0.422'
           gradientUnits='objectBoundingBox'
         >
-          <stop offset='0' stop-color='#ffc0ac' />
-          <stop offset='1' stop-color='#ffd6c7' />
+          <stop offset='0' stopColor='#ffc0ac' />
+          <stop offset='1' stopColor='#ffd6c7' />
         </linearGradient>
         <linearGradient
           id='linear-gradient-9'
@@ -97,8 +97,8 @@ export default function BlocoServices() {
           y2='0.262'
           gradientUnits='objectBoundingBox'
         >
-          <stop offset='0' stop-color='#c7283a' />
-          <stop offset='1' stop-color='#ef4b4b' />
+          <stop offset='0' stopColor='#c7283a' />
+          <stop offset='1' stopColor='#ef4b4b' />
         </linearGradient>
         <linearGradient
           id='linear-gradient-10'
@@ -108,8 +108,8 @@ export default function BlocoServices() {
           y2='0.213'
           gradientUnits='objectBoundingBox'
         >
-          <stop offset='0' stop-color='#c7283a' />
-          <stop offset='1' stop-color='#c7283a' stop-opacity='0' />
+          <stop offset='0' stopColor='#c7283a' />
+          <stop offset='1' stopColor='#c7283a' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='linear-gradient-11'
@@ -151,8 +151,8 @@ export default function BlocoServices() {
           y2='0.95'
           gradientUnits='objectBoundingBox'
         >
-          <stop offset='0' stop-color='#acd4f3' />
-          <stop offset='1' stop-color='#4099f1' />
+          <stop offset='0' stopColor='#acd4f3' />
+          <stop offset='1' stopColor='#4099f1' />
         </linearGradient>
         <linearGradient
           id='linear-gradient-16'
@@ -194,8 +194,8 @@ export default function BlocoServices() {
           y2='0.645'
           gradientUnits='objectBoundingBox'
         >
-          <stop offset='0' stop-color='#ffb965' />
-          <stop offset='1' stop-color='#ff8a5f' />
+          <stop offset='0' stopColor='#ffb965' />
+          <stop offset='1' stopColor='#ff8a5f' />
         </linearGradient>
         <linearGradient
           id='linear-gradient-21'
@@ -205,8 +205,8 @@ export default function BlocoServices() {
           y2='1.323'
           gradientUnits='objectBoundingBox'
         >
-          <stop offset='0' stop-color='#dbe42c' />
-          <stop offset='1' stop-color='#6ad419' />
+          <stop offset='0' stopColor='#dbe42c' />
+          <stop offset='1' stopColor='#6ad419' />
         </linearGradient>
         <linearGradient
           id='linear-gradient-22'
@@ -232,8 +232,8 @@ export default function BlocoServices() {
           y2='1.206'
           gradientUnits='objectBoundingBox'
         >
-          <stop offset='0' stop-color='#fff' />
-          <stop offset='1' stop-color='#fff' stop-opacity='0' />
+          <stop offset='0' stopColor='#fff' />
+          <stop offset='1' stopColor='#fff' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='linear-gradient-25'

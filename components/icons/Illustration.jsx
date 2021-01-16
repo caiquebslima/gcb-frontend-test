@@ -16,8 +16,8 @@ export default function Illustration() {
           y2='0.906'
           gradientUnits='objectBoundingBox'
         >
-          <stop offset='0' stop-color='#6bbc61' />
-          <stop offset='1' stop-color='#a7df63' />
+          <stop offset='0' stopColor='#6bbc61' />
+          <stop offset='1' stopColor='#a7df63' />
         </linearGradient>
         <linearGradient
           id='linear-gradient-2'
@@ -27,8 +27,8 @@ export default function Illustration() {
           y2='1.431'
           gradientUnits='objectBoundingBox'
         >
-          <stop offset='0' stop-color='#369e5f' />
-          <stop offset='1' stop-color='#369e5f' stop-opacity='0' />
+          <stop offset='0' stopColor='#369e5f' />
+          <stop offset='1' stopColor='#369e5f' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='linear-gradient-3'
@@ -38,8 +38,8 @@ export default function Illustration() {
           y2='0.87'
           gradientUnits='objectBoundingBox'
         >
-          <stop offset='0' stop-color='#dbe42c' />
-          <stop offset='1' stop-color='#6ad419' />
+          <stop offset='0' stopColor='#dbe42c' />
+          <stop offset='1' stopColor='#6ad419' />
         </linearGradient>
         <linearGradient
           id='linear-gradient-4'
@@ -49,8 +49,8 @@ export default function Illustration() {
           y2='0.767'
           gradientUnits='objectBoundingBox'
         >
-          <stop offset='0' stop-color='#fff' />
-          <stop offset='1' stop-color='#fff' stop-opacity='0' />
+          <stop offset='0' stopColor='#fff' />
+          <stop offset='1' stopColor='#fff' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='linear-gradient-5'
@@ -68,8 +68,8 @@ export default function Illustration() {
           y2='0.374'
           gradientUnits='objectBoundingBox'
         >
-          <stop offset='0' stop-color='#8f5138' />
-          <stop offset='1' stop-color='#ba6d4d' />
+          <stop offset='0' stopColor='#8f5138' />
+          <stop offset='1' stopColor='#ba6d4d' />
         </linearGradient>
         <linearGradient
           id='linear-gradient-7'
@@ -87,8 +87,8 @@ export default function Illustration() {
           y2='0.1'
           gradientUnits='objectBoundingBox'
         >
-          <stop offset='0' stop-color='#c7283a' />
-          <stop offset='1' stop-color='#ef4b4b' />
+          <stop offset='0' stopColor='#c7283a' />
+          <stop offset='1' stopColor='#ef4b4b' />
         </linearGradient>
         <linearGradient
           id='linear-gradient-9'
@@ -114,8 +114,8 @@ export default function Illustration() {
           y2='0.954'
           gradientUnits='objectBoundingBox'
         >
-          <stop offset='0' stop-color='#ffb965' />
-          <stop offset='1' stop-color='#ff8a5f' />
+          <stop offset='0' stopColor='#ffb965' />
+          <stop offset='1' stopColor='#ff8a5f' />
         </linearGradient>
         <linearGradient
           id='linear-gradient-12'
@@ -125,8 +125,8 @@ export default function Illustration() {
           y2='0.916'
           gradientUnits='objectBoundingBox'
         >
-          <stop offset='0' stop-color='#fff' />
-          <stop offset='1' stop-color='#eaf5ff' />
+          <stop offset='0' stopColor='#fff' />
+          <stop offset='1' stopColor='#eaf5ff' />
         </linearGradient>
         <linearGradient
           id='linear-gradient-13'
@@ -136,8 +136,8 @@ export default function Illustration() {
           y2='-0.4'
           gradientUnits='objectBoundingBox'
         >
-          <stop offset='0' stop-color='#1d164d' />
-          <stop offset='1' stop-color='#4a4975' />
+          <stop offset='0' stopColor='#1d164d' />
+          <stop offset='1' stopColor='#4a4975' />
         </linearGradient>
         <linearGradient
           id='linear-gradient-14'
@@ -155,8 +155,8 @@ export default function Illustration() {
           y2='0.95'
           gradientUnits='objectBoundingBox'
         >
-          <stop offset='0' stop-color='#acd4f3' />
-          <stop offset='1' stop-color='#4099f1' />
+          <stop offset='0' stopColor='#acd4f3' />
+          <stop offset='1' stopColor='#4099f1' />
         </linearGradient>
         <linearGradient
           id='linear-gradient-16'
@@ -206,8 +206,8 @@ export default function Illustration() {
           y2='0.5'
           gradientUnits='objectBoundingBox'
         >
-          <stop offset='0' stop-color='#c9e2f4' />
-          <stop offset='1' stop-color='#eaf5ff' />
+          <stop offset='0' stopColor='#c9e2f4' />
+          <stop offset='1' stopColor='#eaf5ff' />
         </linearGradient>
         <linearGradient
           id='linear-gradient-22'
@@ -233,8 +233,8 @@ export default function Illustration() {
           y2='0.435'
           gradientUnits='objectBoundingBox'
         >
-          <stop offset='0' stop-color='#ffc0ac' />
-          <stop offset='1' stop-color='#ffd6c7' />
+          <stop offset='0' stopColor='#ffc0ac' />
+          <stop offset='1' stopColor='#ffd6c7' />
         </linearGradient>
         <linearGradient
           id='linear-gradient-25'
@@ -340,8 +340,8 @@ export default function Illustration() {
           y2='1.29'
           gradientUnits='objectBoundingBox'
         >
-          <stop offset='0' stop-color='#ff63de' />
-          <stop offset='1' stop-color='#b122e5' />
+          <stop offset='0' stopColor='#ff63de' />
+          <stop offset='1' stopColor='#b122e5' />
         </linearGradient>
         <linearGradient
           id='linear-gradient-39'
@@ -399,8 +399,8 @@ export default function Illustration() {
           y2='-0.022'
           gradientUnits='objectBoundingBox'
         >
-          <stop offset='0' stop-color='#b7c0e2' />
-          <stop offset='1' stop-color='#b7c0e2' stop-opacity='0' />
+          <stop offset='0' stopColor='#b7c0e2' />
+          <stop offset='1' stopColor='#b7c0e2' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='linear-gradient-48'
@@ -665,14 +665,14 @@ export default function Illustration() {
 carbs'
               transform='translate(38.28 193.104)'
               fill='#4099f1'
-              font-size='31'
-              font-family='Montserrat-ExtraBold, Montserrat'
-              font-weight='800'
+              fontSize='31'
+              fontFamily='Montserrat-ExtraBold, Montserrat'
+              fontWeight='800'
             >
               <tspan x='0' y='0'>
                 25g
               </tspan>
-              <tspan font-size='21'>
+              <tspan fontSize='21'>
                 <tspan x='0' y='38'>
                   carbs
                 </tspan>
@@ -684,14 +684,14 @@ carbs'
 fat'
               transform='translate(157.507 67.166)'
               fill='#d19500'
-              font-size='30'
-              font-family='Montserrat-ExtraBold, Montserrat'
-              font-weight='800'
+              fontSize='30'
+              fontFamily='Montserrat-ExtraBold, Montserrat'
+              fontWeight='800'
             >
               <tspan x='0' y='0'>
                 0.3g
               </tspan>
-              <tspan font-size='24'>
+              <tspan fontSize='24'>
                 <tspan x='0' y='36'>
                   fat
                 </tspan>
@@ -703,14 +703,14 @@ fat'
 calories'
               transform='translate(373.02 96.712)'
               fill='#8f9bc1'
-              font-size='46'
-              font-family='Montserrat-ExtraBold, Montserrat'
-              font-weight='800'
+              fontSize='46'
+              fontFamily='Montserrat-ExtraBold, Montserrat'
+              fontWeight='800'
             >
               <tspan x='0' y='0'>
                 95
               </tspan>
-              <tspan font-size='15'>
+              <tspan fontSize='15'>
                 <tspan x='0' y='27'>
                   calories
                 </tspan>
