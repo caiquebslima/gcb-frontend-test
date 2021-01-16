@@ -6,6 +6,7 @@ import IconSearch from '../components/icons/IconSearch';
 import Menu from '../components/Menu';
 import RecipeCard from '../components/RecipeCard';
 import BlocoServices from '../components/icons/BlocoServices';
+import Carousel from '../components/Carousel';
 
 export default function Home() {
   return (
@@ -99,7 +100,9 @@ export default function Home() {
             Vakalia and Cosonantia, there live the blind texts
           </p>
         </div>
-        <div className='blog__carousel'></div>
+        <div className='blog__carousel'>
+          <Carousel />
+        </div>
       </section>
     </div>
   );

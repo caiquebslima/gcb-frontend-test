@@ -130,7 +130,9 @@ main {
   margin-top: 40px;
   position: relative;
   .svg-container {
-    opacity: 30%;
+    @include media-breakpoint-down(sm) {
+      opacity: 30%;
+    }
   }
   &__text {
     position: absolute;
