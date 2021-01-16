@@ -3,7 +3,7 @@ header {
   height: 60px;
   display: flex;
   justify-content: flex-end;
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(xl) {
     justify-content: space-around;
   }
 

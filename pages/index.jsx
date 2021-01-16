@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import Illustration from '../components/icons/Illustration';
 import IconSearch from '../components/icons/IconSearch';
 import Menu from '../components/Menu';
+import RecipeCard from '../components/RecipeCard';
 
 export default function Home() {
   return (
@@ -16,8 +17,6 @@ export default function Home() {
           name='viewport'
           content='width=device-width, height=device-height, viewport-fit=cover, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no'
         />
-        <meta name='mobile-web-app-capable' content='yes' />
-        <meta name='apple-mobile-web-app-capable' content='yes' />
       </Head>
 
       <main>
@@ -39,6 +38,38 @@ export default function Home() {
           </div>
         </section>
       </main>
+      <section className='best-recipes container'>
+        <div className='best-recipes__title'>
+          <h2>Our Best Recipes</h2>
+          <p>
+            Far far away, behind the word mountains, far from the countries
+            Vakalia and Cosonantia, there live the blind texts
+          </p>
+        </div>
+        <div className='row'>
+          <RecipeCard
+            name={'Broccoli Salad with bacon'}
+            image={'https://placeimg.com/200/200/any/1'}
+          />
+          <RecipeCard
+            name={'Classic Beef Burgers'}
+            image={'https://placeimg.com/200/200/any/2'}
+          />
+        </div>
+        <div className='row'>
+          <RecipeCard
+            name={'Classic Potato Salad'}
+            image={'https://placeimg.com/200/200/any/3'}
+          />
+          <RecipeCard
+            name={'Cherry Cobbler on the Grill'}
+            image={'https://placeimg.com/200/200/any/4'}
+          />
+        </div>
+      </section>
+      <section className='know-more'>
+        <div className='svg-container'></div>
+      </section>
     </div>
   );
 }

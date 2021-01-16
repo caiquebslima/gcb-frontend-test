@@ -67,21 +67,21 @@
     }
 
     .hamburger-inner {
-      background-color: #fff;
+      background-color: #000;
 
       &:after,
       &:before {
-        background-color: #fff;
+        background-color: #000;
       }
     }
 
     &.is-active {
       .hamburger-inner {
-        background-color: #fff;
+        background-color: #000;
 
         &:after,
         &:before {
-          background-color: #fff;
+          background-color: #000;
         }
       }
     }
