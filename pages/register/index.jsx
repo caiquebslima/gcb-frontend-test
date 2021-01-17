@@ -3,6 +3,21 @@ import { useFormik, Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 
 function Register() {
+  const zipcodeSearch = (cep) => {
+    const address = fetch(`'https://viacep.com.br/ws/${cep}/json'`)
+      .then((res) => {
+        if (res.status !== 200) {
+          console.log('error on the request! Status Code:' + res.status);
+          return;
+        }
+        res.json().then((data) => {
+          console.log(data);
+        });
+      })
+      .catch((err) => {
+        console.log('Fetch Error', err);
+      });
+  };
   const validationSchema = Yup.object({
     firstName: Yup.string()
       .max(15, 'Must be 15 characters or less')
@@ -13,19 +28,20 @@ function Register() {
       .min(2, 'Must be over 2 characters')
       .required('Required'),
     email: Yup.string().email('Invalid email address').required('Required'),
+    birth: Yup.date(),
   });
 
   const initialValues = {
     firstName: '',
     lastName: '',
-    // birth: '',
     email: '',
-    // cpf: 0,
-    // cep: '',
-    // address: '',
-    // city: '',
-    // state: '',
-    // number: '',
+    birth: '',
+    cpf: 0,
+    cep: '',
+    address: '',
+    city: '',
+    state: '',
+    number: '',
   };
 
   const formik = useFormik({
@@ -46,35 +62,18 @@ function Register() {
           }, 400);
         }}
       >
-        {(formik) => (
-          <form onSubmit={formik.handleSubmit}>
-            <label htmlFor='firstName'>First Name</label>
-            <input
-              type='text'
-              id='firstName'
-              {...formik.getFieldProps('firstName')}
-            />
-            {formik.touched.firstName && formik.errors.firstName ? (
-              <div>{formik.errors.firstName}</div>
-            ) : null}
-            <label htmlFor='lastName'>Last Name</label>
-            <input
-              type='text'
-              id='lastName'
-              {...formik.getFieldProps('lastName')}
-            />
-            {formik.touched.lastName && formik.errors.lastName ? (
-              <div>{formik.errors.lastName}</div>
-            ) : null}
-            <label htmlFor='email'>Email Address</label>
-            <input type='email' id='email' {...formik.getFieldProps('email')} />
-            {formik.touched.email && formik.errors.email ? (
-              <div>{formik.errors.email}</div>
-            ) : null}
-
-            <button type='submit'>Submit</button>
-          </form>
-        )}
+        <Form>
+          <label htmlFor='firstName'>First Name</label>
+          <Field name='firstName' type='text' />
+          <ErrorMessage name='firstName' />
+          <label htmlFor='lastName'>Last Name</label>
+          <Field name='lastName' type='text' />
+          <ErrorMessage name='lastName' />
+          <label htmlFor='email'>Email Address</label>
+          <Field name='email' type='email' />
+          <ErrorMessage name='email' />
+          <button type='submit'>Submit</button>
+        </Form>
       </Formik>
     </div>
   );
