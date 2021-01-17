@@ -48,7 +48,20 @@ export default function Home() {
             Vakalia and Cosonantia, there live the blind texts
           </p>
         </div>
-        <RecipeCard />
+        <div className='row'>
+          <RecipeCard
+            image={'/comida_1.svg'}
+            title={'Broccoli Salad with Bacon'}
+          />
+          <RecipeCard image={'/comida_2.svg'} title={'Classic Beef Burgers'} />
+        </div>
+        <div className='row'>
+          <RecipeCard image={'/comida_3.svg'} title={'Classic Potato Salad'} />
+          <RecipeCard
+            image={'/comida_4.svg'}
+            title={'Cherry Cobbler on the Grill'}
+          />
+        </div>
       </section>
       <section className='know-more'>
         <div className='svg-container'>
