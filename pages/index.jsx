@@ -7,6 +7,7 @@ import Menu from '../components/Menu';
 import RecipeCard from '../components/RecipeCard';
 import BlocoServices from '../components/icons/BlocoServices';
 import Carousel from '../components/Carousel';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -86,7 +87,7 @@ export default function Home() {
           <button>Know More</button>
         </div>
       </section>
-      <section className='blog container'>
+      <section className='blog '>
         <div className='blog__title'>
           <h2>Read Our Blog</h2>
           <p>
@@ -98,6 +99,7 @@ export default function Home() {
           <Carousel />
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

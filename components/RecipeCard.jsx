@@ -1,8 +1,3 @@
-import Comida1 from '../components/icons/Comida1';
-import Comida2 from '../components/icons/Comida2';
-import Comida3 from '../components/icons/Comida3';
-import Comida4 from '../components/icons/Comida4';
-import React from 'react';
 import Image from 'next/image';
 
 export default function RecipeCard({ image, title }) {

@@ -1,8 +1,10 @@
+import Image from 'next/image';
+
 export default function CarouselCard({ image, name }) {
   return (
     <div className='carousel__item'>
       <div className='image-container'>
-        <img src={image} alt='' />
+        <Image src={image} alt='me' width={340} height={235} />
       </div>
       <div className='text-container'>
         <h3>Lorem ipsum dolor sit amet.</h3>
