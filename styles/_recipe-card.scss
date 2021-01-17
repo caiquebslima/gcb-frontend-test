@@ -9,6 +9,8 @@
   max-width: 250px;
   margin: 15px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 6px;
+
   @include media-breakpoint-up(sm) {
     max-width: none;
     width: 100%;
@@ -17,6 +19,7 @@
   }
   &__image {
     width: 100%;
+    overflow: hidden;
 
     img {
       width: 100%;
@@ -31,26 +34,29 @@
     @include media-breakpoint-up(sm) {
       flex-direction: column;
       padding: 15px;
+      width: 100%;
     }
     &--title {
-      // width: 100%;
+      width: 80%;
       text-align: center;
-      padding: 5px;
+      padding: 5px 10px;
       background-color: #fff;
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
-      top: 0;
+      top: -10px;
       color: #000;
-
       border-radius: 6px;
-      font-weight: 600;
+      font-weight: 500;
+      font-size: 20px;
       @include media-breakpoint-up(sm) {
         padding-top: 10px;
         position: static;
         font-size: 18px;
         background: none;
         transform: translate(0, 0);
+        text-align: left;
+        font-weight: 700;
       }
       @include media-breakpoint-up(lg) {
         font-size: 24px;
@@ -73,6 +79,7 @@
         position: static;
         transform: translate(0, 0);
         left: 0;
+        width: 150px;
       }
     }
   }

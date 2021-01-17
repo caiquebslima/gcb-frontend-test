@@ -110,18 +110,21 @@ main {
 
   width: 100%;
   &__title {
-    margin-top: 20px;
+    margin: 20px 0;
     text-align: center;
     h2 {
       // color: #295a8a;
+
       font-weight: 700;
+      font-size: 36px;
     }
 
     p {
-      max-width: 550px;
+      max-width: 600px;
       margin: auto;
       color: #a9a6b8;
-      font-weight: 300;
+      font-weight: 500;
+      letter-spacing: 0.015em;
     }
   }
 }
@@ -176,9 +179,10 @@ main {
 .blog {
   margin-top: 40px;
   position: relative;
-  margin-top: 20px;
-  text-align: center;
+  width: 100%;
+  overflow: hidden;
   &__title {
+    text-align: center;
     h2 {
       // color: #295a8a;
       font-weight: 700;

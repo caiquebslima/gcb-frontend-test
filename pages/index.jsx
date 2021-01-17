@@ -48,26 +48,7 @@ export default function Home() {
             Vakalia and Cosonantia, there live the blind texts
           </p>
         </div>
-        <div className='row'>
-          <RecipeCard
-            name={'Broccoli Salad with bacon'}
-            image={'https://placeimg.com/200/200/any/1'}
-          />
-          <RecipeCard
-            name={'Classic Beef Burgers'}
-            image={'https://placeimg.com/200/200/any/2'}
-          />
-        </div>
-        <div className='row'>
-          <RecipeCard
-            name={'Classic Potato Salad'}
-            image={'https://placeimg.com/200/200/any/3'}
-          />
-          <RecipeCard
-            name={'Cherry Cobbler on the Grill'}
-            image={'https://placeimg.com/200/200/any/4'}
-          />
-        </div>
+        <RecipeCard />
       </section>
       <section className='know-more'>
         <div className='svg-container'>
@@ -92,7 +73,7 @@ export default function Home() {
           <button>Know More</button>
         </div>
       </section>
-      <section className='blog'>
+      <section className='blog container'>
         <div className='blog__title'>
           <h2>Read Our Blog</h2>
           <p>
