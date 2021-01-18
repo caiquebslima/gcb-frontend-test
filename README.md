@@ -6,10 +6,10 @@ First, run yarn to install dependencies, then run yarn start or yarn dev to star
 
 ## Dependencies:
 
-Formik for form creation on register page
-Yup for form validation
-Sass for css processing
-Slick for carousel implementation
-React-Datetime and Moment for date selection on form register page
-Bootstrap for quick styles
+Formik for form creation on register page\
+Yup for form validation\
+Sass for css processing\
+Slick for carousel implementation\
+React-Datetime and Moment for date selection on form register page\
+Bootstrap for quick styles\
 
