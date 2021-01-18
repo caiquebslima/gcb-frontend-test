@@ -4,7 +4,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 First, run yarn to install dependencies, then run yarn start or yarn dev to start the local server.
 
-##Dependencies:
+## Dependencies:
+
 Formik for form creation on register page
 Yup for form validation
 Sass for css processing
