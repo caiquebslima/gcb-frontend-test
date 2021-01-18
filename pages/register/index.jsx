@@ -8,7 +8,7 @@ import {
   useFormikContext,
 } from 'formik';
 import Datetime from 'react-datetime';
-
+import Cookies from 'universal-cookie';
 import * as Yup from 'yup';
 import 'react-datetime/css/react-datetime.css';
 
@@ -123,7 +123,13 @@ function Register() {
         validationSchema={validationSchema}
         onSubmit={(values, { setSubmitting }) => {
           localStorage.setItem('Register Form Values', JSON.stringify(values));
-
+          const cookies = new Cookies();
+          cookies.set('Register Form Values', values, {
+            path: '/',
+            sameSite: true,
+            secure: true,
+          });
+          console.log(cookies.get('Register Form Values'));
           setTimeout(() => {
             alert(JSON.stringify(values, null, 2));
 
@@ -155,7 +161,7 @@ function Register() {
               placeholder='john@healthyfood.com'
             />
 
-            <DateOfBirthField label='Date of Birth' name='birth' />
+            <DateOfBirthField label='Date of Birth (MM/DD/YYYY)' name='birth' />
           </div>
           <div className=' register__row'>
             <TextInput
