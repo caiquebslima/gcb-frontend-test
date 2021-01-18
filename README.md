@@ -12,4 +12,5 @@ Sass for css processing\
 Slick for carousel implementation\
 React-Datetime and Moment for date selection on form register page\
 Bootstrap for quick styles\
+Universal Cookie for cookie storage\
 
