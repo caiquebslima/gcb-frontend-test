@@ -13,7 +13,7 @@ import Footer from '../components/Footer';
 
 export default function Home() {
   return (
-    <div>
+    <div className='home-container'>
       <Head>
         <title>Healthy Food</title>
         <meta charSet='utf-8' />
