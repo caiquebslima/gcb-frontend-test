@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import Head from 'next/head';
 import Header from '../components/Header';
 import Illustration from '../components/icons/Illustration';
@@ -6,6 +7,7 @@ import IconSearch from '../components/icons/IconSearch';
 import Menu from '../components/Menu';
 import RecipeCard from '../components/RecipeCard';
 import BlocoServices from '../components/icons/BlocoServices';
+import BlocoFinal from '../components/icons/BlocoFinal';
 import Carousel from '../components/Carousel';
 import Footer from '../components/Footer';
 
@@ -26,6 +28,7 @@ export default function Home() {
         <Header />
         <div className='svg-container'>
           <Illustration />
+          {/* <Image src={'/Illustration.svg'} alt='me' width={872} height={743} /> */}
         </div>
         <section className='search'>
           <div className='search__title'>
@@ -97,6 +100,16 @@ export default function Home() {
         </div>
         <div className='blog__carousel'>
           <Carousel />
+        </div>
+      </section>
+      <section className='join'>
+        <div className='svg-container'>
+          <BlocoFinal />
+        </div>
+        <div className='join__text'>
+          <h2>Join our membership to get special offer</h2>
+          <input type='text' placeholder='Enter your email address' />
+          <button>Join</button>
         </div>
       </section>
       <Footer />

@@ -51,9 +51,9 @@ const ZipCodeField = ({ label, ...props }) => {
   } = useFormikContext();
   const [field, meta] = useField(props);
 
-  React.useEffect(() => {
+  React.useEffect(async () => {
     if (touched.cep && cep.length === 8) {
-      fetch(`https://viacep.com.br/ws/${cep}/json`)
+      await fetch(`https://viacep.com.br/ws/${cep}/json`)
         .then((res) => {
           if (res.status !== 200) {
             console.log('error on the request! Status Code:' + res.status);
