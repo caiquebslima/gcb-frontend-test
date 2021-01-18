@@ -1,0 +1,23 @@
+header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: flex-end;
+  @include media-breakpoint-up(xl) {
+    justify-content: space-around;
+  }
+
+  h1 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 36px;
+    margin-top: 5px;
+    padding-right: 20px;
+
+    @include media-breakpoint-up(xl) {
+      margin-top: 20px;
+      color: #84ca62;
+      font-weight: 700;
+    }
+  }
+}

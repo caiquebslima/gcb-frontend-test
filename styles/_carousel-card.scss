@@ -1,0 +1,35 @@
+.slick-list {
+  overflow: visible !important;
+}
+
+.carousel__item {
+  max-width: 340px;
+  margin: 0 20px;
+  border-radius: 6px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  overflow: hidden;
+  @include media-breakpoint-up(sm) {
+  }
+  .text-container {
+    padding: 15px;
+    @include media-breakpoint-up(md) {
+      padding: 25px;
+    }
+    h3 {
+      padding: 5px 10px;
+      font-weight: 600;
+    }
+    .user {
+      display: flex;
+      align-items: center;
+      padding: 10px 10px;
+      color: #a9a6b8;
+
+      .avatar-container {
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 10px;
+      }
+    }
+  }
+}
