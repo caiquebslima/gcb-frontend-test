@@ -8,42 +8,81 @@ import {
   useFormikContext,
 } from 'formik';
 import Datetime from 'react-datetime';
+
 import * as Yup from 'yup';
 import 'react-datetime/css/react-datetime.css';
 
 const TextInput = ({ label, ...props }) => {
   const [field, meta] = useField(props);
   return (
-    <>
+    <div className='form-item'>
       <label htmlFor={props.id || props.name}>{label}</label>
-      <input className='text-input' {...field} {...props} />
+      <input className='text-input form-control' {...field} {...props} />
       {meta.touched && meta.error ? (
         <div className='error'>{meta.error}</div>
       ) : null}
-    </>
+    </div>
+  );
+};
+
+const DateOfBirthField = ({ label, ...props }) => {
+  const { setFieldValue } = useFormikContext();
+  const [field, meta] = useField(props);
+  return (
+    <div className='form-item'>
+      <label htmlFor={props.id || props.name}>{label}</label>
+      {/* <p>{label}</p> */}
+      <Datetime
+        dateFormat={'MM/DD/YYYY'}
+        timeFormat={false}
+        onChange={(e) => {
+          setFieldValue('birth', e._d);
+        }}
+      />
+    </div>
+  );
+};
+
+const ZipCodeField = ({ label, ...props }) => {
+  const {
+    values: { cep },
+    touched,
+    setFieldValue,
+  } = useFormikContext();
+  const [field, meta] = useField(props);
+
+  React.useEffect(() => {
+    if (touched.cep && cep.length === 8) {
+      fetch(`https://viacep.com.br/ws/${cep}/json`)
+        .then((res) => {
+          if (res.status !== 200) {
+            console.log('error on the request! Status Code:' + res.status);
+            return;
+          }
+          res.json().then((data) => {
+            setFieldValue('address', data.logradouro);
+            setFieldValue('state', data.uf);
+            setFieldValue('city', data.localidade);
+          });
+        })
+        .catch((err) => {
+          console.log('Fetch Error', err);
+        });
+    }
+  }, [cep, touched.cep, props.name]);
+
+  return (
+    <div className='form-item'>
+      <label htmlFor={props.id || props.name}>{label}</label>
+      <input className='text-input form-control' {...field} {...props} />
+      {meta.touched && meta.error ? (
+        <div className='error'>{meta.error}</div>
+      ) : null}
+    </div>
   );
 };
 
 function Register() {
-  const zipCodeSearch = function (cep) {
-    const addressData = fetch(`https://viacep.com.br/ws/${cep}/json`)
-      .then((res) => {
-        if (res.status !== 200) {
-          console.log('error on the request! Status Code:' + res.status);
-          return;
-        }
-        res.json().then((data) => {
-          console.log(data);
-
-          return data;
-        });
-      })
-      .catch((err) => {
-        console.log('Fetch Error', err);
-      });
-    return addressData;
-  };
-
   const validationSchema = Yup.object({
     firstName: Yup.string()
       .max(15, 'Must be 15 characters or less')
@@ -55,13 +94,11 @@ function Register() {
       .required('Required'),
     email: Yup.string().email('Invalid email address').required('Required'),
     birth: Yup.date().required(),
-    cpf: Yup.number()
-      .min(11, 'Must be 11 numbers')
-      .max(11, 'Must be 11 numbers')
+    cpf: Yup.string()
+      .matches(/^[0-9]{11}$/, 'Must be exactly 11 digits')
       .required('Required'),
-    cep: Yup.number()
-      .min(8, 'Must be 8 numbers')
-      .max(8, 'Must be 8 numbers')
+    cep: Yup.string()
+      .matches(/^[0-9]{8}$/, 'Must be exactly 8 digits')
       .required('Required'),
   });
 
@@ -78,89 +115,95 @@ function Register() {
     addressNumber: '',
   };
 
-  const formik = useFormik({
-    onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
-    },
-  });
   return (
     <div className='container register'>
+      <h2>Register</h2>
       <Formik
         initialValues={initialValues}
         validationSchema={validationSchema}
         onSubmit={(values, { setSubmitting }) => {
-          console.log(values);
-          // setTimeout(() => {
-          //   alert(JSON.stringify(values, null, 2));
+          localStorage.setItem('Register Form Values', JSON.stringify(values));
 
-          //   setSubmitting(false);
-          // }, 400);
+          setTimeout(() => {
+            alert(JSON.stringify(values, null, 2));
+
+            setSubmitting(false);
+          }, 400);
         }}
       >
         <Form>
-          <TextInput
-            label='First Name'
-            name='firstName'
-            type='text'
-            placeholder='John'
-          />
-          <TextInput
-            label='Last Name'
-            name='lastName'
-            type='text'
-            placeholder='Doe'
-          />
-          <TextInput
-            label='Email'
-            name='email'
-            type='email'
-            placeholder='john@healthyfood.com'
-          />
+          <div className=' register__row'>
+            <TextInput
+              label='First Name'
+              name='firstName'
+              type='text'
+              placeholder='John'
+            />
 
-          <p>Data de Nascimento</p>
-          <Datetime />
+            <TextInput
+              label='Last Name'
+              name='lastName'
+              type='text'
+              placeholder='Doe'
+            />
+          </div>
+          <div className=' register__row'>
+            <TextInput
+              label='Email'
+              name='email'
+              type='email'
+              placeholder='john@healthyfood.com'
+            />
 
-          <TextInput
-            label='CPF'
-            name='cpf'
-            type='text'
-            placeholder='12345678910'
-          />
-          <TextInput
-            label='CEP'
-            name='cep'
-            type='text'
-            placeholder='01010101'
-            onBlur={(e) => {
-              const values = zipCodeSearch(e.target.value).then((res) => {
-                console.log(res);
-              });
-            }}
-          />
-          <TextInput
-            label='Address'
-            name='address'
-            type='text'
-            placeholder='Avenida Paulista'
-          />
-          <TextInput
-            label='Address Number'
-            name='addressNumber'
-            type='text'
-            placeholder='900'
-          />
-          <TextInput
-            label='State'
-            name='state'
-            type='text'
-            placeholder='São Paulo'
-          />
-          <TextInput
-            label='City'
-            name='city'
-            type='text'
-            placeholder='São Paulo'
-          />
+            <DateOfBirthField label='Date of Birth' name='birth' />
+          </div>
+          <div className=' register__row'>
+            <TextInput
+              label='CPF'
+              name='cpf'
+              type='text'
+              placeholder='12345678910'
+            />
+
+            <ZipCodeField
+              label='CEP'
+              name='cep'
+              type='text'
+              placeholder='08008000'
+            />
+          </div>
+          <div className=' register__row'>
+            <ZipCodeField
+              label='Address'
+              name='address'
+              type='text'
+              placeholder='Avenida Paulista'
+              disabled={true}
+            />
+
+            <TextInput
+              label='Address Number'
+              name='addressNumber'
+              type='text'
+              placeholder='900'
+            />
+          </div>
+          <div className=' register__row'>
+            <ZipCodeField
+              label='State'
+              name='state'
+              type='text'
+              placeholder='São Paulo'
+              disabled={true}
+            />
+            <ZipCodeField
+              label='City'
+              name='city'
+              type='text'
+              placeholder='São Paulo'
+              disabled={true}
+            />
+          </div>
 
           <button type='submit'>Submit</button>
         </Form>
