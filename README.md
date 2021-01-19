@@ -1,12 +1,13 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Getting Started
 
 First, run yarn to install dependencies, then run yarn start or yarn dev to start the local server.
 
-## Dependencies:
+# Dependencies:
 
-Formik for form creation on register page\
+## Formik:/
+For the creation of the form structure on the user register page\
 Yup for form validation\
 Sass for css processing\
 Slick for carousel implementation\
