@@ -1,6 +1,6 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Getting Started
 
 You can check the app running on [Heroku](https://gcb-frontend-test.herokuapp.com/) or clone the repository and run it into your machine.
 
@@ -18,9 +18,7 @@ then, start the local server with
 yarn start
 ```
 
-## Dependencies:
-
-<br>
+# Dependencies:
 
 - [Formik](https://formik.org/) for the creation of the form structure of the `/register` page and [Yup](https://github.com/jquense/yup) for the validation of the inputs
 - [SASS](https://sass-lang.com/) for CSS processing (_do you believe in life after SASS? ♫)_\
