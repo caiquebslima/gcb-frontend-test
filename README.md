@@ -25,6 +25,6 @@ yarn start
 - [Formik](https://formik.org/) for the creation of the form structure of the `/register` page and [Yup](https://github.com/jquense/yup) for the validation of the inputs
 - [SASS](https://sass-lang.com/) for CSS processing (_do you believe in life after SASS? ♫)_\
 - [react-slick](https://github.com/akiran/react-slick) for simple carousel implementation
-- [React-Datetime](https://www.npmjs.com/package/react-datetime) and [Moment](https://momentjs.com/) for date selection on form register page\
+- [React-Datepicker](https://github.com/Hacker0x01/react-datepicker) and [text-mask](https://github.com/text-mask/text-mask) for date of birth selection on form register page\
 - [Bootstrap](https://getbootstrap.com/) for some of its styles and mostly its `@media breakpoints`
 - [Universal Cookie](https://www.npmjs.com/package/universal-cookie) for cookie storage

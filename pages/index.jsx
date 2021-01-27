@@ -13,7 +13,7 @@ import Footer from '../components/Footer';
 
 export default function Home() {
   return (
-    <div>
+    <div className='home-container'>
       <Head>
         <title>Healthy Food</title>
         <meta charSet='utf-8' />
@@ -24,7 +24,7 @@ export default function Home() {
         />
       </Head>
 
-      <main>
+      <main className='container-fluid'>
         <Header />
         <div className='svg-container'>
           <Illustration />
@@ -44,7 +44,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <section className='best-recipes container'>
+      <section className='best-recipes container-fluid'>
         <div className='best-recipes__title'>
           <h2>Our Best Recipes</h2>
           <p>
