@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function RecipeCard({ image, title }) {
   return (
-    <div className='card-container col-sm-6 m-lg-0 mt-3'>
+    <div className='card-container col-sm-4 mt-3 mb-3'>
       <div className='card '>
         <div className='card__image'>
           <Image src={image} alt='me' width={253} height={225} />

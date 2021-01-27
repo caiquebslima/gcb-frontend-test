@@ -24,7 +24,7 @@ export default function Home() {
         />
       </Head>
 
-      <main>
+      <main className='container-fluid'>
         <Header />
         <div className='svg-container'>
           <Illustration />
@@ -44,7 +44,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <section className='best-recipes container'>
+      <section className='best-recipes container-fluid'>
         <div className='best-recipes__title'>
           <h2>Our Best Recipes</h2>
           <p>
