@@ -7,10 +7,11 @@ import {
   useField,
   useFormikContext,
 } from 'formik';
-import Datetime from 'react-datetime';
 import Cookies from 'universal-cookie';
 import * as Yup from 'yup';
-import 'react-datetime/css/react-datetime.css';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
+import MaskedInput from 'react-text-mask';
 
 const TextInput = ({ label, ...props }) => {
   const [field, meta] = useField(props);
@@ -28,15 +29,24 @@ const TextInput = ({ label, ...props }) => {
 const DateOfBirthField = ({ label, ...props }) => {
   const { setFieldValue } = useFormikContext();
   const [field, meta] = useField(props);
+
   return (
     <div className='form-item'>
       <label htmlFor={props.id || props.name}>{label}</label>
       {/* <p>{label}</p> */}
-      <Datetime
-        dateFormat={'MM/DD/YYYY'}
-        timeFormat={false}
-        onChange={(e) => {
-          setFieldValue('birth', e._d);
+      <DatePicker
+        {...field}
+        {...props}
+        customInput={
+          <MaskedInput
+            mask={[/\d/, /\d/, '/', /\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/]}
+            keepCharPositions={true}
+            guide={true}
+          />
+        }
+        selected={(field.value && new Date(field.value)) || null}
+        onChange={(val) => {
+          setFieldValue(field.name, val);
         }}
       />
     </div>
@@ -106,7 +116,7 @@ function Register() {
     firstName: '',
     lastName: '',
     email: '',
-    birth: new Date(),
+    birth: null,
     cpf: '',
     cep: '',
     address: '',
